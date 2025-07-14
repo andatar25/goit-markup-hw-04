@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --iris: #4d5ae5;
+  --navy-blue: #2e2f42;
+  --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
+  --ocean: #404bbf;
+  --slate: #434455;
+}
+
+header,
+body,
+footer {
+  font-family: "Roboto", sans-serif;
+}
+
+.h1 {
+  font-size: 56px;
+  font-weight: bold;
+  color: white;
+  line-height: 1.07;
+  text-align: center;
+  width: 496px;
+}
+.button {
+  width: 169px;
+  height: 56px;
+  color: white;
+  background-color: var(--iris);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  border: none;
+  padding: 16px 32px;
+
+  margin-top: 40px;
+  border: 1px;
+  border: currentColor;
+  border-radius: 4px;
+}
+.h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--slate);
+}
+
+a {
+  color: inherit;
+}
+address {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--navy-blue);
+  letter-spacing: 0.32px;
+  line-height: 1.5;
+}
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.address .link:hover,
+.address .link:active {
+  color: var(--iris);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.logo,
+.footer-logo {
+  color: var(--iris);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.logo > span {
+  color: var(--navy-blue);
+  width: 115px;
+  white-space: nowrap;
+}
+
+.navi {
+  color: var(--navy-blue);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  line-height: 1.5;
+  display: flex;
+  margin-right: 332px;
+}
+
+.navi .list,
+.address .list {
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  display: block;
+  white-space: nowrap;
+}
+
+.navi .link:hover,
+.navi .link:active {
+  color: var(--ocean);
+}
+
+.section-1 {
+  /* background-color: var(--navy-blue); */
+}
+
+.section-1 .container {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--navy-blue);
+  background-image: url(../images/peopleoffice.jpg)
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.button:hover {
+  background-color: var(--ocean);
+}
+
+.section-2 .container {
+  padding: 120px 0px;
+
+  display: flex;
+}
+
+.section-3 {
+  background-color: var(--cloud);
+}
+
+.section-3 .list-item {
+  width: 264px;
+  height: 260px;
+  background-color: white;
+}
+
+.section-3 .container .list {
+  padding-top: 72px;
+}
+
+.section-3 .h3 {
+  margin-top: 32px;
+}
+.section-3 p {
+  margin-bottom: 32px;
+}
+
+.section-3 .container {
+  padding: 120px 0px;
+}
+
+.section-3 .container .list .list-item {
+  text-align: center;
+  background-color: white;
+}
+
+.section-4 {
+  border: 1px solid;
+  color: var(--cornflower);
+}
+
+.section-4 .images {
+  width: 360px;
+  height: 300px;
+}
+
+.section-4 .h3 {
+  margin-top: 32px;
+}
+
+.section-4 .h2 {
+  margin-bottom: 72px;
+  color: var(--navy-blue);
+}
+
+.section-4 .container {
+  padding: 120px 0px;
+  flex-wrap: wrap;
+
+  flex-basis: calc((100% - 24px) / 6);
+}
+.section-4 .container .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-4 .container .list-item {
+  width: 360px;
+  height: 420px;
+}
+
+.images {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.our-team {
+  width: 264px;
+  height: 260px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1158px;
+}
+
+.container .logo {
+  margin-right: 76px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 24px;
+}
+
+.footer {
+  background-color: var(--navy-blue);
+}
+
+.footer-logo > span {
+  color: var(--cloud);
+}
+
+.footer > .footer-text {
+  color: var(--cloud);
+}
+.footer .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.container .footer-text {
+  width: 264px;
+  color: var(--cloud);
+  padding-top: 16px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1158px;
+}
