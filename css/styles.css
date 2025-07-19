@@ -34,11 +34,11 @@ footer {
   cursor: pointer;
   border: none;
   padding: 16px 32px;
-
   margin-top: 40px;
   border: 1px;
   border: currentColor;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .h2 {
   font-size: 36px;
@@ -69,6 +69,12 @@ address {
   color: var(--navy-blue);
   letter-spacing: 0.32px;
   line-height: 1.5;
+  padding-right: 156px;
+}
+
+.address {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .page-container {
@@ -91,6 +97,8 @@ address {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+  padding-left: 156px;
+  gap: 40px;
 }
 .logo,
 .footer-logo {
@@ -134,22 +142,17 @@ address {
   color: var(--ocean);
 }
 
-.section-1 {
-  /* background-color: var(--navy-blue); */
-}
-
 .section-1 .container {
   padding-top: 188px;
   padding-bottom: 188px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--navy-blue);
-  background-image: url(../images/peopleoffice.jpg)
-  background-size: cover;
+  background-image: url(../images/peopleoffice.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  
+  background-color: rgba(46, 47, 66, 0.7);
+  background-blend-mode: multiply;
 }
 
 .button:hover {
@@ -157,9 +160,18 @@ address {
 }
 
 .section-2 .container {
-  padding: 120px 0px;
-
+  padding: 120px 156px;
   display: flex;
+}
+
+.section-2 .list-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  width: 264px;
+  height: 224px;
 }
 
 .section-3 {
@@ -276,6 +288,23 @@ address {
 }
 
 .container {
-  margin: 0 auto;
-  width: 1158px;
+  width: 1440px;
+}
+
+.icon {
+  background-color: var(--cloud);
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+}
+
+.list-item-2 {
+  width: 40px;
+  height: 40px;
+  background-color: var(--navy-blue);
+}
+
+.icon-2 {
+  fill: white;
 }
