@@ -75,6 +75,7 @@ address {
 .address {
   display: flex;
   flex-direction: row-reverse;
+  position: relative;
 }
 
 .page-container {
@@ -87,9 +88,17 @@ address {
   flex-grow: 1;
 }
 
-.address .link:hover,
+.address .link:hover::after,
 .address .link:active {
   color: var(--iris);
+  display: flex;
+  flex-direction: column;
+  content: "";
+  width: 72px;
+  height: 4px;
+  margin-top: 20px;
+  background-color: var(--ocean);
+  position: absolute;
 }
 
 .header .container {
@@ -100,6 +109,7 @@ address {
   padding-left: 156px;
   gap: 40px;
 }
+
 .logo,
 .footer-logo {
   color: var(--iris);
@@ -123,6 +133,7 @@ address {
   letter-spacing: 0.32px;
   line-height: 1.5;
   display: flex;
+  position: relative;
   margin-right: 332px;
 }
 
@@ -137,9 +148,17 @@ address {
   white-space: nowrap;
 }
 
-.navi .link:hover,
+.navi .link:hover::after,
 .navi .link:active {
   color: var(--ocean);
+  display: flex;
+  flex-direction: column;
+  content: "";
+  width: 72px;
+  height: 4px;
+  margin-top: 20px;
+  background-color: var(--ocean);
+  position: absolute;
 }
 
 .section-1 .container {
@@ -196,7 +215,6 @@ address {
 }
 
 .section-4 {
-  border: 1px solid;
   color: var(--cornflower);
 }
 
@@ -339,9 +357,14 @@ address {
 
 .section-4 .list-item:hover .our-portfolio-info {
   visibility: visible;
-  transition-property: all;
+  opacity: 1;
+  transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-4 .list-item .our-portfolio-info {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .footer-social-media-text {
